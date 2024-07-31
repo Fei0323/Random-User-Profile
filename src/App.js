@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [profile, setProfile] = useState(null);
   const fetchProfile = () => {
-    axios.get('http://randomuser.me/api?nat=en')
+    axios.get('http://randomuser.me/api/')
       .then((response) => {
         setProfile(response.data.results[0]);
       })
